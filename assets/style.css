@@ -2,12 +2,14 @@
     height:50px;
     float: left;
     position: relative;
-    margin-top: 7px
+    margin-top: 7px;
+    margin-bottom: 7px;
 }
 .nav-wrapper {
     background-color: rgb(129, 173, 173);
     color: black;
     font-family: 'Archivo', sans-serif;
+    position: relative;
 }
 body{
         font-family: 'Archivo', sans-serif;
@@ -34,13 +36,11 @@ body{
    font-family: 'Archivo', sans-serif;
    opacity: 0.7;
    display: block;
-   /* margin-left: auto;
-   margin-right: auto;
-   margin-top: 50px;
-   margin-bottom: 70px; */
    padding: 20px;
    margin: 50px auto;
    padding-top: 20px;
-   width: 70%;
-float: right;
+   display: block;
+   float: right;
+   width: 33%;
+
 }

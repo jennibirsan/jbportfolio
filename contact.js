@@ -13,7 +13,7 @@ var firebaseConfig = {
 
 
    // 2. Button for adding subscribers
-  $("#btn").on("click", function(event) {
+  $(".btn").on("click", function(event) {
     event.preventDefault();
   
      // Grabs user input
@@ -22,6 +22,9 @@ var firebaseConfig = {
     var newPhone = $("#first_phone2").val().trim();
     var newEmail = $("#last_email2").val().trim();
     var newComments = $("#first_comments2").val().trim();
+    // var fromReferral = $("#test1").val().trim();
+    // var socialMedia = $("#test2").val().trim();
+    // var online = $("#test3").val().trim();
     
     // Creates local "temporary" object for holding subscriber data
     var newContact = {
@@ -30,6 +33,9 @@ var firebaseConfig = {
       phone: newPhone,
       email: newEmail,
       comments: newComments,
+      // referral: fromReferral,
+      // socialmedia: socialMedia,
+      // onlinebrowsing: online,
     };
     
     // Uploads data to the database
@@ -41,7 +47,10 @@ var firebaseConfig = {
     console.log(newContact.phone);
     console.log(newContact.email);
     console.log(newContact.comments);
-     alert("Thank you for signing up!");
+    // console.log(newContact.referral);
+    // console.log(newContact.socialmedia);
+    // console.log(newContact.onlinebrowsing);
+     alert("Thank you for contacting me!");
      
      // Clears all of the text-boxes
     $("#first_name2").val("");
@@ -49,4 +58,7 @@ var firebaseConfig = {
     $("#first_phone2").val("");
     $("#last_email2").val("");
     $("#first_comments2").val("");
+    // $("#test1").val("");
+    // $("#test2").val("");
+    // $("#test3").val("");
   });
